@@ -1,0 +1,164 @@
+@font-face {
+    font-family: myFont ;
+    src: url('/Result-summary/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+*{
+    font-family: myFont;
+}
+.page{
+    display: flex;
+    width: 500px;
+    margin: 170px auto 0px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #E7EDFB;
+}
+.left{
+    flex: 1;
+    background-color: #5A3DF9;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+.right{
+    flex: 1;
+}
+.left p{
+    color: #CFBEFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 30px 0px 30px;
+}
+.round{
+    background: linear-gradient(to bottom,#3a16c9 ,#5A3DF9);
+    color: white;
+    width: 55%;
+    aspect-ratio: 1/1;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 50%;
+}
+.round .r-large{
+    font-size: 3em;
+    font-weight: bolder;
+    position: relative;
+    top:2rem
+}
+.round .r-small{
+    font-size: .8em;
+    color: #7669F9;
+    position: relative;
+    top: 1.7rem;
+    font-weight: bold;
+}
+.l-text{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 20px 0px 10px;
+}
+.s-text{
+    color: #BABBFF;
+    text-align: center;
+    font-weight: 500;
+    font-size: .8em;
+    margin: 15px 35px;
+}
+.r-con{
+    width: 80%;
+    margin: 0px auto;
+}
+.head{
+    color: #383B52;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 30px 0px 20px;
+
+}
+.con{
+    display: flex;
+    margin: 11px 0px;
+    align-items: center;
+    border-radius: 10px;
+    height: 44px;
+}
+svg{
+    flex: 2;
+}
+.name{
+    flex: 5;
+    font-size: .9em;
+    font-weight: bold;
+}
+.mark{
+    flex: 1;
+    font-size: .9em;
+    color: #3A3E55;
+    font-weight: bold;
+}
+.hun{
+    flex: 2;
+    margin-right: 10px;
+    font-size: .9em;
+    color: #8D969C;
+    font-weight: bold;
+}
+.btn button{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #543BF7;
+    padding: 10px;
+    margin-top: 18px;
+}
+button:hover{
+    background-color: #303B59;
+}
+.c1{
+    background-color: #fceeec;
+}
+.c2{
+    background-color: #fbf6ea;
+}
+.c3{
+    background-color: #e7fcfc;
+}
+.c4{
+    background-color: #ebebfb;
+}
+.c1 .name{
+    color: #D57E84;
+}
+.c2 .name{
+    color: #F0C376;
+}
+.c3 .name{
+    color: #44AB91;
+}
+.c4 .name{
+    color: #5A5FAD;
+}
+@media screen and (max-width: 400px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .page{
+        display: inline-block;
+        width: 100%;
+        min-width: 280px;
+        margin: 0px;
+        position: relative;
+        bottom: 50px;
+    }
+    .left{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .left p,.round,.l-text,.s-text{
+        position: relative;
+        top: 45px;
+    }
+}
